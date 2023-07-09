@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+.App{
+display: flex;
+justify-content: center;
+}
+.fontJosfinSan{
+  font-family: Josefin Sans;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background_image {
+  width: 100%;
+  height: 236px;
+  
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  width:42.24%;
+  height: 687px;
+  min-width: 300px;
+  top: 81px;
+  position: absolute;
+ z-index: 1;
+background: #FFFFFF ;
+  border-radius: 6px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.head{
+  width: 100%;
+  height: 58px;
+  background: #FFFFFF ;
+    box-shadow: 0px 3px 7px #00000029;
+    border-radius: 6px 6px 0px 0px;
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.body{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    margin: 16px auto;
+}
+
+.amazonLogo{
+  width: 96px;
+    height: 26px;
+   margin-top: 14px;
+   margin-bottom: 12px;
+   padding-top: 6px;
+}
+.login{
+    text-align: left;
+    font: normal normal normal 29px/35px Josefin Sans;
+    color: #20B716;
+    margin:0px 0px;
+}
+.treeLogo{
+  margin-top: 24px;
+  width: 66.72%;
+    height: 128px;
+    margin-bottom: 4px;
+}
+.input_div{
+width: 66.72%;
+}
+.inputs{
+   width: 100%;
+    height: 25px;
+    margin-top: 20px;
+    border: 0px #FFFFFF;
+    border-bottom: 2px solid #E2E8F0;;
+}
+::placeholder {
+  font: 16px/19px Josefin Sans;
+  color: #20B716;
+}
+.errorMsg{
+  height: 13px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.errorImg{
+  width: 16px;
+    height: 16px;
+}
+.msg{
+  font: PT+Sans;
+  font-size: 13px;
+    color: #EE2D6E;
+}
+.signIn{
+width: 66.72%;
+    height: 49px;
+  margin-top: 24px;
+  color: #FFFFFF;
+  font: normal normal normal 19px/23px Josefin Sans;
+    background: #20B716;
+    border-radius: 40px;
+    border: solid #20B716;
+   
+    
+}
+.forgotPassword{
+  margin-top:16px;
+  width: 66.72%;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+  
+.forgotPassword>p{
+  font-size:  14px;
+}
+.colorD9{
+color: #D9185F;
+}
+.margin{
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.button{
+margin-top: 16px;
+
+display: flex;
+  width: 66.72%;
+  align-items: center;
+  height: 46px;
+  background: #4285F4;
+}
+.button>button{
+  background: #4285F4;
+  margin: auto;
+    font: normal normal 600 14px/18px Josefin Sans;
+    color: #FFFFFF;
+    border:solid #4285F4 ;
+    
+}
+.google{
+  width: 36px;
+  height: 36px;
+  padding: 5px 4px;
+}
+.facebook{
+  width: 40px;
+    height: 40px;
+    padding: 4px 2px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:480px){
+  .card {
+      width: 75%;
+      height: 100%;
+      min-width: 300px;
+      top: 81px;
+      position: absolute;
+      z-index: 1;
+      background: #FFFFFF;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+        .treeLogo {
+          margin-top: 24px;
+          width: 100%;
+          height: 128px;
+          margin-bottom: 4px;
+        }
+                .input_div {
+                  width: 100%;
+                }
+                                .signIn {
+                                  width: 100%;
+                                  height: 49px;
+                                  margin-top: 24px;
+                                  color: #FFFFFF;
+                                  font: normal normal normal 19px/23px Josefin Sans;
+                                  background: #20B716;
+                                  border-radius: 40px;
+                                  border: solid #20B716;
+                
+                
+                                }
+                
+                                .forgotPassword {
+                                  margin-top: 16px;
+                                  width: 100%;
+                                  height: 15px;
+                                  display: flex;
+                                  justify-content: space-between;
+                                  flex-direction: row;
+                                  align-items: center;
+                                  ;
+                                }
+                                                                .button {
+                                                                  margin-top: 16px;
+                                
+                                                                  display: flex;
+                                                                  width: 100%;
+                                                                  align-items: center;
+                                                                  height: 46px;
+                                                                  background: #4285F4;
+                                                                }
 }
